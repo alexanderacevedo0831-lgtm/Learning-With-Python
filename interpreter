@@ -1,0 +1,19 @@
+expression = input("Expression: ")
+x, y, z = expression.split(" ")
+
+# convert numbers
+x = int(x)
+z = int(z)
+
+# check operator and calculate
+if y == "+":
+    result = x + z
+elif y == "-":
+    result = x - z
+elif y == "*":
+    result = x * z
+elif y == "/":
+    result = x / z
+
+# output formatted result
+print(f"{result:.1f}")
