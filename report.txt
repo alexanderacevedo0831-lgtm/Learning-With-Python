@@ -1,0 +1,24 @@
+SYSTEM HEALTH REPORT
+====================
+
+System Health Status: {'status': 'UNHEALTHY', 'reasons': ['excessive_invalid_records'], 'metrics': {'total_valid': 2, 'total_invalid': 3, 'invalid_ratio': 0.6, 'critical_events': 1}}
+
+VALID DATA SUMMARY
+------------------
+Total Valid Records: 2
+Warning Events: 0
+Critical Events: 1
+
+CRITICAL EVENTS
+---------------
+- {'timestamp': '2024-01-01T10:02:00Z', 'source': 'IND570_scale_01', 'metric': 'weight_lb', 'value': 98000, 'reason': 'critical_weight'}
+
+INVALID RECORDS (DATA INTEGRITY ISSUES)
+--------------------------------------
+Total Invalid Records: 3
+
+- {'record': {'timestamp': 'INVALID_TIME', 'metric': 'weight_lb', 'value': 92000, 'source': 'IND570_scale_01'}, 'reason': 'invalid_timestamp_format'}
+- {'record': {'timestamp': '2024-01-01T10:03:00Z', 'metric': 'weight_lb', 'value': 150000, 'source': 'IND570_scale_01'}, 'reason': 'sensor_error_out_of_range'}
+- {'record': {'timestamp': '2024-01-01T10:04:00Z', 'metric': 'wrong_metric', 'value': 50000, 'source': 'IND570_scale_01'}, 'reason': 'invalid_metric'}
+
+END OF REPORT

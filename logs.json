@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2024-01-01T10:00:00Z",
+    "metric": "weight_lb",
+    "value": 88000,
+    "source": "IND570_scale_01"
+  },
+  {
+    "timestamp": "INVALID_TIME",
+    "metric": "weight_lb",
+    "value": 92000,
+    "source": "IND570_scale_01"
+  },
+  {
+    "timestamp": "2024-01-01T10:02:00Z",
+    "metric": "weight_lb",
+    "value": 98000,
+    "source": "IND570_scale_01"
+  },
+  {
+    "timestamp": "2024-01-01T10:03:00Z",
+    "metric": "weight_lb",
+    "value": 150000,
+    "source": "IND570_scale_01"
+  },
+  {
+    "timestamp": "2024-01-01T10:04:00Z",
+    "metric": "wrong_metric",
+    "value": 50000,
+    "source": "IND570_scale_01"
+  }
+]
